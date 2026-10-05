@@ -31,6 +31,21 @@ vardnica={
     'ū' : 3,
     'v' : 1,
     'z' : 1,
-    'ž' : 3,
+    'ž' : 3
+    }
+vards = input("Ievadi savu vārdu:")
 
-}
+def parbaudīt(word):
+    summa=0
+    for burts in word:
+        if burts in vardnica.keys():
+            summa+=vardnica[burts]
+    return summa
+
+rezultats= parbaudīt(vards)
+
+print(f"Par šo vārdu jūs dabujāt {rezultats} tik punktu")
+
+
+
+
