@@ -1,0 +1,2 @@
+# Scrabble
+mana spēle "Scrabble"
